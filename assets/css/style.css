@@ -4,4 +4,28 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  height: 100dvh;
+  padding: 8px;
+}
+
+.galeria {
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr); */
+  /* display: column; */
+  /* gap: 16px; */
+  columns: 3;
+  column-gap: 16px;
+  row-gap: 16px;
+  width: 100%;
+  background-color: blue;
+  height: 100%;
 }
