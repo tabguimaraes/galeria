@@ -37,13 +37,15 @@ const imgPath = [
   },
 ];
 
-console.log(imgPath.length);
+// console.log(imgPath.length);
 
 function createIMG() {
+  const img = document.createElement("img");
+  // console.log(img);
   imgPath.forEach((element) => {
-    console.log(imgPath);
-    const img = document.createElement("img");
-    galeria.appendChild(img.src[element.url]);
+    // console.log(element);
+    // galeria.appendChild(img.src[element.url]);
+    console.log([element.url]);
   });
 }
 
