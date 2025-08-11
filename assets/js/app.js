@@ -37,15 +37,12 @@ const imgPath = [
   },
 ];
 
-// console.log(imgPath.length);
-
 function createIMG() {
-  const img = document.createElement("img");
-  // console.log(img);
   imgPath.forEach((element) => {
-    // console.log(element);
-    // galeria.appendChild(img.src[element.url]);
-    console.log([element.url]);
+    const img = document.createElement("img");
+    img.src = element.url;
+    img.alt = element.nome;
+    galeria.appendChild(img);
   });
 }
 
