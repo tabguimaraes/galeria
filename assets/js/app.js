@@ -41,6 +41,7 @@ console.log(imgPath.length);
 
 function createIMG() {
   imgPath.forEach((element) => {
-    galeria.appendChild();
+    const img = document.createElement("img");
+    galeria.appendChild(img.src[element.url]);
   });
 }
