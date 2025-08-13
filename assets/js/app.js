@@ -1,6 +1,6 @@
 "use scrict";
 
-const galeria = document.querySelector(".galeria");
+const galeriaContainer = document.querySelector(".galeria-container");
 const galeriaItem = document.querySelectorAll(".galeria-item");
 
 const imgPath = [
@@ -40,15 +40,15 @@ const imgPath = [
 ];
 
 function createIMG() {
-  imgPath.forEach((element) => {
+  imgPath.forEach((imagem) => {
     const img = document.createElement("img");
     const picture = document.createElement("picture");
     const span = document.createElement("span");
-    img.classList.add("galeria-item");
-    img.src = element.url;
-    img.alt = element.nome;
-    span.innerText = element.nome;
-    galeria.appendChild(picture);
+    picture.classList.add("galeria-item");
+    img.src = imagem.url;
+    img.alt = imagem.nome;
+    span.innerText = imagem.nome;
+    galeriaContainer.appendChild(picture);
     picture.appendChild(img);
     picture.appendChild(span);
   });

@@ -5,29 +5,25 @@
   text-decoration: none;
 }
 
-body {
-  background: grey;
-}
-
-.galeria {
+.galeria-container {
   column-width: 420px;
   column-gap: 8px;
 }
 
-.galeria picture {
+/* .galeria picture */
+.galeria-item {
   display: block;
-
   margin: 0 0 8px;
   position: relative;
 }
 
-.galeria picture img {
+.galeria-item img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-.galeria picture span {
+.galeria-item span {
   position: absolute;
   bottom: 8px;
   left: 50%;
