@@ -6,32 +6,25 @@
 }
 
 body {
-  background-color: grey;
-}
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-}
-
-body {
-  background-color: grey;
+  background: grey;
 }
 
 .galeria {
-  columns: 3;
+  column-width: 420px;
+  column-gap: 8px;
 }
 
 .galeria picture {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
+  display: block;
+
+  margin: 0 0 8px;
   position: relative;
 }
 
 .galeria picture img {
-  max-width: 440px;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .galeria picture span {
