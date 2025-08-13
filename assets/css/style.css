@@ -5,12 +5,43 @@
   text-decoration: none;
 }
 
-img {
-  max-width: 100%;
-  z-index: -1;
+body {
+  background-color: grey;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+body {
+  background-color: grey;
 }
 
 .galeria {
   columns: 3;
-  column-gap: 4px;
+}
+
+.galeria picture {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.galeria picture img {
+  max-width: 440px;
+}
+
+.galeria picture span {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 14px;
 }
