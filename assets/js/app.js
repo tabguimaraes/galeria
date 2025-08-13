@@ -55,3 +55,15 @@ function createIMG() {
 }
 
 createIMG();
+
+window.addEventListener("scroll", () => {
+  const scrollY = window.scrollY;
+  const windowHeight = window.innerHeight;
+  const scrollHeight = document.documentElement.scrollHeight;
+
+  const PosicaoScroll = (scrollY / (scrollHeight - windowHeight)) * 100;
+
+  if (PosicaoScroll > 50) {
+    createIMG();
+  }
+});
