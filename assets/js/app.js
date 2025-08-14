@@ -46,6 +46,8 @@ window.addEventListener("scroll", () => {
   if (PosicaoScroll > 50) {
     pagina++;
     PosicaoScroll = 0;
-    getImages();
+    setTimeout(() => {
+      getImages();
+    }, 2000);
   }
 });
